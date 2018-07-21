@@ -1,0 +1,5 @@
+DefineLoaderTest = {};
+
+function DefineLoaderTest.MyPrint()
+	print("DefineLoaderTest >> MyPrint");
+end

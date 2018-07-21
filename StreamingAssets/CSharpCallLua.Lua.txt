@@ -1,0 +1,24 @@
+strName = "yangzhi"
+int_Age = 25
+flo_Stature = 1.74
+isHandsome = true
+
+person = {
+    name = 'tony',age = 18,1,0.5,true,"stringg",
+    eat = function(self,name,foodName) --self代表当前当前对象
+        print(name.."正在吃"..foodName);
+    end
+}
+--用‘:’的方式会自动添加self
+function person:eat(name,foodName)
+    print(name.."正在吃"..foodName);
+end
+--用‘.’的方式，需要手动添加
+function person.eat(self,name,foodName)
+    print(name.."正在吃"..foodName);
+end
+--全局函数
+function add(a,b)
+    print(a+b);
+    return a+b,a,b;
+end
